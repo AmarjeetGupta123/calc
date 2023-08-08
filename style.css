@@ -2,64 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 22px;
-    font-family:sans-serif ;
-    color: #ff6525;
-    background-color: #ecf0f3;
+    background-color: #efefef;
+    font-family: sans-serif;
+    color: orange;
+
 }
 .container{
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
-.calculator{
+.calculator2{
     border-color: #ecf0f3;
     padding: 15px;
-    border-radius: 30px;
     box-shadow: inset 5px 5px 12px #fff,
-                5px 5px 12px rgba(0,0,0,0.14);
-    display: grid ;
-    grid-template-columns: repeat(4,70px);
-
+                   5px 5px 12px rgba(0,0,0,0.14);
+    border-radius: 10px;   
+    display: grid;       
+    grid-template-columns: repeat(4,70px);     
 }
 input{
     grid-column: span 4;
-    width: 260px;
+    width: 280px;
     height: 70px;
-    border: none;
+    border-radius: 6px;
     box-shadow: inset -5px -5px 12px #fff,
-                inset 5px 5px 12px rgba(0,0,0,0.14);
-    background-color: #ecf0f3;
-    border-radius: 30px;            
-    outline: none;
-    font-size: 50px;
-    text-align: end;
-    padding: 10px;
-    margin: 40px auto;
-}
-input::placeholder{
-    color: #ff6525;
+                 inset  5px 5px 12px rgba(0,0,0,0.14);
+border: none;
+outline: none;
+text-align: end;
+font-size: 50px;
+padding: 15px;
+margin: 40px auto;
 }
 button{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px auto;
     box-shadow: inset -5px -5px 12px #fff,
-                 5px  5px 12px rgba(0,0,0,0.14);
-    margin: 8px auto;  
-    border: none;          
-
+                   5px 5px 12px rgba(0,0,0,0.14);
+     outline: none;    
+     border: none;          
 }
 button:hover{
-    cursor: pointer;
     box-shadow: inset -5px -5px 12px #fff,
-                inset 5px  5px 12px rgba(0,0,0,0.14);
+                inset   5px 5px 12px rgba(0,0,0,0.14);
+    cursor: pointer;    
+    color: black;        
 }
 .equal{
-    width: 115px;
-    border-radius: 40px;
+    width: 120px;
     margin: 8px 12px;
-
+    border-radius: 10px;
 }
